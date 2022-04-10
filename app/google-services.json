@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846727959076",
+    "project_id": "pulsefirestore-5271e",
+    "storage_bucket": "pulsefirestore-5271e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846727959076:android:09fdaef8d51dc91d7a7eb1",
+        "android_client_info": {
+          "package_name": "com.krayapp.pulsefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846727959076-u24h17uh6ste20gqf5etgh92o92klpcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1dSyXs67X_yNB-Ksrtb456bN5yNu3xY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846727959076-u24h17uh6ste20gqf5etgh92o92klpcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
