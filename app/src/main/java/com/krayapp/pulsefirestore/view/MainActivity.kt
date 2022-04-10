@@ -1,9 +1,12 @@
-package com.krayapp.pulsefirestore
+package com.krayapp.pulsefirestore.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.krayapp.pulsefirestore.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
+    private val viewModel:MainViewModel by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
