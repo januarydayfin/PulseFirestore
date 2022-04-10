@@ -15,7 +15,7 @@ import kotlin.random.Random
 
 class MainViewModel(private val repo: DataSource):ViewModel() {
 
-    private val _dataFlow = MutableStateFlow(mutableListOf(HealthInfo( 0, null,0,null)))
+    private val _dataFlow = MutableStateFlow(mutableListOf(HealthInfo( 0, "",0,"")))
     val dataFlow:StateFlow<MutableList<HealthInfo>> = _dataFlow.asStateFlow()
     private var baseJob: Job? = null
     private val mainScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
