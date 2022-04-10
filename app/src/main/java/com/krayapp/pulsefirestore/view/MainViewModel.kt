@@ -15,7 +15,7 @@ import kotlin.random.Random
 
 class MainViewModel(private val repo: DataSource):ViewModel() {
 
-    private val _dataFlow = MutableStateFlow(mutableListOf(HealthInfo( 0, "",0,"")))
+    private val _dataFlow = MutableStateFlow(mutableListOf(HealthInfo(  pulse = "", pressure = "", date = "")))
     val dataFlow:StateFlow<MutableList<HealthInfo>> = _dataFlow.asStateFlow()
     private var baseJob: Job? = null
     private val mainScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
@@ -42,6 +42,6 @@ class MainViewModel(private val repo: DataSource):ViewModel() {
         val formatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)
         val date = LocalDateTime.now().format(formatter)
         delay(2000L)
-        return HealthInfo(pulse = pulse, pressure = "${highPressure / lowPressure}", date = date)
+        return HealthInfo(pulse = "$pulse", pressure = "${highPressure / lowPressure}", date = date)
     }
 }

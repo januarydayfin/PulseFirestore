@@ -7,6 +7,3 @@ data class HealthInfo(
     val date: String
 )
 
-fun HealthInfo.setId(id:Int){
-    this.id = id
-}
