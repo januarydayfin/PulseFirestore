@@ -11,7 +11,9 @@ class MainViewHolder(view: View)
     private val viewBinding:HealthTemplateBinding by viewBinding()
         fun bind(healthInfo: HealthInfo){
             with(viewBinding){
-                TODO()
+                date.text = healthInfo.date
+                pressure.text = healthInfo.pressure
+                pulse.text = healthInfo.pulse
             }
         }
 }
